@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Hotel Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.2em;
+        }
+
+        a{
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .booking-form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <a href="home.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="rooms.html">Rooms</a>
+              <a href="food.html">Food</a>
+              <a href="contact.html"> Contact Us</a>
+              <a href="feedback.html">Feedback</a>
+              <a href="login.html">Login</a>
+              <a href="book now.html">Book Now</a>
+             
+              <!-- Add more navigation links as needed -->
+            </ul>
+          </nav>
+          <img src="Images/hotel crown-icon.jpg" alt="Icon Image">
+          <h1>HOTEL CROWN - Booking Form </Form></h1>
+  
+    </header>
+
+    <main>
+        <div class="booking-form">
+            <h2>Booking Form</h2>
+            <form onsubmit="submitBooking(event)">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" required>
+
+                <label for="checkIn">Check-In Date:</label>
+                <input type="date" id="checkIn" required>
+
+                <label for="checkOut">Check-Out Date:</label>
+                <input type="date" id="checkOut" required>
+
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" required>
+                    <option value="standardroom">Standard Room</option>
+                    <option value="deluxeroom">Deluxe Room</option>
+                    
+                </select>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function submitBooking(event) {
+            event.preventDefault();
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const checkIn = document.getElementById("checkIn").value;
+            const checkOut = document.getElementById("checkOut").value;
+            const roomType = document.getElementById("roomType").value;
+
+            // You can send this information to the server for processing and database storage
+            console.log(`Full Name: ${fullName}, Email: ${email}, Phone: ${phone}, Check-In: ${checkIn}, Check-Out: ${checkOut}, Room Type: ${roomType}`);
+
+            // Reset the form
+            document.getElementById("fullName").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementB

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.2em;
+            
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .featured {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .book-now-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-now-button:hover {
+            background-color: #2980b9;
+           
+        }
+
+        a{
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="food.html">Food</a>
+          <a href="contact.html"> Contact Us</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="login.html">Login</a>
+          <a href="book now.html">Book Now</a>
+         
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+      
+    <h1>HOTEL CROWN</h1>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Welcome to Our Hotel</h2>
+            <img src="Images/crown_hotel.avif" alt="Hotel Interior">
+            <p>"Experience luxury and comfort at its best."</p>
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <h3>Comfortable Rooms</h3>
+                <p>"Discover our spacious and well-appointed rooms."</p>
+                <img src="Images/deluxe room1.jpg" alt="Hotel Interior">
+            </div>
+            <div class="service">
+                <h3>Fine Dining</h3>
+                <p>"Indulge in a culinary journey with our exquisite dining options."</p>
+                <img src="Images/restaurant.jpg" alt="Hotel Interior">
+            </div>
+            
+            <div class="service">
+                <h3>Spa & Wellness</h3>
+                <p>"A Day at Spa is you way of thanking your body."</p>
+                <img src="Images/spa.jpg" alt="Hotel Interior">
+            </div>
+           
+        </section>
+        
+
+        <div class="booking-button">
+            <button class="book-now-button" onclick="redirectToBooking()">Book Now</button>
+        </div>
+    </main>
+
+    <script>
+        function redirectToBooking() {
+            // Add the URL or navigation logic for the booking page
+            alert("Go to Book Now option");
+        }
+    </script>
+</body>
+</html>

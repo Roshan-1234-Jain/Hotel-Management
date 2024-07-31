@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hotel Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.2em;
+        }
+
+        a{
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .follow-us {
+            text-align: center;
+           
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #3498db;
+        }
+
+        .follow-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media-links img {
+  width: 40px;
+  height: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="food.html">Food</a>
+          <a href="contact.html"> Contact Us</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="login.html">Login</a>
+          <a href="book now.html">Book Now</a>
+         
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+      <img src="Images/hotel crown-icon.jpg" alt="Icon Image">
+        <h1>HOTEL CROWN - Contact Us</h1>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>For inquiries or assistance, please contact us:</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send us a Message</h2>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media! Follow us to get the latest updates, news, and exclusive content.</p>
+            <div class="social-media-links">
+              <a href="https://www.facebook.com/profile.php?id=100024470300844&mibextid=ZbWKwL" target="_blank">
+                <img src="Images/facebook icon.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="C:\Users\singh\Desktop\Hotel Management Project\Images\Instagram icon.jpg" alt="Instagram">
+              </a>
+              <a href="https://www.linkedin.com/in/harsh-raj-singh-thakur-22838128a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="Images/Linkedin icon.png" alt="Linkedin">
+              </a>
+            </div>
+          </div>
+          
+    </main>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // You can add logic here to send the form data to the server or perform other actions
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            // Optionally, you can reset the form after submission
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
